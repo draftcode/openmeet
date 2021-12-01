@@ -1,0 +1,25 @@
+{
+  "name": "Open Meet",
+  "description": "Open Google Meet URL when meeting starts",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "oauth2": {
+    "client_id": "678367109786-id8kdjuv6v8moudss12pbl3do0e9fhmj.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar.events.readonly"
+    ]
+  },
+  "permissions": [
+    "identity",
+    "alarms",
+    "tabs"
+  ]
+}
