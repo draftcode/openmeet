@@ -15,6 +15,7 @@
 const isTarget = (event: any) => {
     console.log("Event", event.summary, event.status, event.eventType, event.hangoutLink, new Date(event.start.dateTime));
     return event.hangoutLink
+        && event.start.dateTime
         && event.status === 'confirmed'
         && event.eventType === 'default';
 };
